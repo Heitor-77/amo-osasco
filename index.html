@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amo Osasco | Ortodontia e estética do sorriso no Centro de Osasco</title>
+<meta name="description" content="Ortodontia, estética do sorriso e estética facial no centro de Osasco. Agende sua avaliação pelo WhatsApp.">
+<meta name="theme-color" content="#12303F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12303F; --ink-2:#3B5766; --teal:#2A8CA6; --teal-deep:#1D6B82;
+  --sand:#F8F2E9; --sand-2:#EFE5D6; --paper:#FFFDF9; --coral:#D96A33;
+  --wa:#0E9F5A; --wa-dark:#0A7F47; --line:rgba(18,48,63,.14);
+  --r:14px; --maxw:1160px; --hdr:68px;
+  --serif:'Fraunces',Georgia,serif; --sans:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--hdr) + 12px)}
+body{font-family:var(--sans);color:var(--ink);background:var(--sand);line-height:1.6;font-size:17px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+section{padding:76px 0}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.015em}
+h1{font-size:clamp(2.5rem,9.4vw,4.6rem)}
+h2{font-size:clamp(1.9rem,6.2vw,2.9rem);margin-bottom:14px}
+h3{font-size:1.25rem;line-height:1.2}
+em{font-style:italic;color:var(--teal-deep)}
+.eyebrow{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--coral);margin-bottom:12px;display:block}
+.script{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.3rem;color:var(--coral);line-height:1.2;display:block;margin-bottom:10px}
+.lead{font-size:1.08rem;color:var(--ink-2);max-width:52ch}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:17px 30px;border-radius:999px;transition:background .2s,transform .2s;border:0;cursor:pointer;min-height:56px;font-family:inherit}
+.btn:hover{background:var(--wa-dark);transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn.small{padding:11px 20px;font-size:.95rem;min-height:46px}
+.btn.big{min-height:64px;padding:19px 40px;font-size:1.15rem}
+.btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+.btn-wrap{margin-top:40px;display:flex;justify-content:center}
+.btn-wrap.left{justify-content:flex-start}
+
+/* header */
+header.top{position:sticky;top:0;z-index:60;background:rgba(248,242,233,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.top.scrolled{border-color:var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:var(--hdr);gap:14px}
+.logo{font-family:var(--serif);font-size:1.45rem;text-decoration:none;font-weight:500;line-height:1.1;white-space:nowrap}
+.logo b{color:var(--coral);font-weight:500}
+.logo small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin-top:1px}
+@media (max-width:459px){.logo small{display:none}.logo{font-size:1.35rem}.top .btn.small{padding:10px 16px}.top-actions{gap:8px}}
+.nav{display:none}
+.nav a{text-decoration:none;font-size:.92rem;font-weight:600;color:var(--ink-2);padding:8px 2px}
+.nav a:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--coral);text-underline-offset:6px}
+.top-actions{display:flex;align-items:center;gap:10px}
+.burger{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+.burger span,.burger span::before,.burger span::after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;transition:transform .25s,background .25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.drawer{position:fixed;inset:var(--hdr) 0 auto 0;background:var(--sand);border-bottom:1px solid var(--line);padding:6px 20px 20px;display:none;z-index:55}
+.drawer.open{display:block}
+.drawer a{display:block;font-family:var(--serif);font-size:1.35rem;padding:13px 0;border-bottom:1px solid var(--line);text-decoration:none}
+
+/* hero */
+.hero{padding:24px 0 72px}
+.hero .wrap{display:grid;gap:36px}
+.hero h1 em{display:block}
+.hero .lead{margin-top:20px;max-width:34ch}
+.hero .btn{margin-top:30px}
+.hero-stars{margin-top:20px;font-size:.92rem;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.hero-stars b{color:#E09A14;letter-spacing:2px;font-weight:400}
+.hero-stars a{text-decoration:underline;text-underline-offset:3px}
+.hero-img{border-radius:240px 240px 14px 14px;overflow:hidden;aspect-ratio:4/5;max-height:620px;width:100%}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+
+/* números */
+.numbers{padding:0}
+.num-row{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;display:grid;grid-template-columns:1fr 1fr;gap:26px 16px}
+.num b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,8vw,3.2rem);line-height:1}
+.num span{font-size:.9rem;color:var(--ink-2);display:block;margin-top:8px;max-width:22ch;line-height:1.4}
+
+/* identificação */
+.mirror .wrap{display:grid;gap:34px}
+.mirror h2{max-width:14ch}
+.checks{list-style:none}
+.checks li{display:flex;gap:16px;align-items:flex-start;padding:19px 0;border-bottom:1px solid var(--line);font-size:1.05rem;line-height:1.45}
+.checks li:first-child{border-top:1px solid var(--line)}
+.checks li::before{content:"";width:22px;height:22px;border-radius:50%;border:1.5px solid var(--coral);flex:none;margin-top:2px}
+.mirror-note{margin-top:24px;font-family:var(--serif);font-style:italic;font-size:1.2rem;line-height:1.45;color:var(--teal-deep);max-width:40ch}
+
+/* medo */
+.fear{background:var(--sand-2)}
+.fear .wrap{display:grid;gap:34px;align-items:center}
+.fear-img{border-radius:260px 260px 14px 14px;overflow:hidden;aspect-ratio:1/1;max-width:440px;width:100%;margin-inline:auto}
+.fear-img img{width:100%;height:100%;object-fit:cover}
+.fear p.t{color:var(--ink-2);max-width:46ch}
+
+/* por que escolher */
+.why{background:var(--ink);color:#fff}
+.why h2 em{color:#8FD3E3}
+.why .eyebrow{color:#F0A27A}
+.why .lead{color:rgba(255,255,255,.75)}
+.why-grid{margin-top:40px;display:grid;gap:28px}
+.why-item img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.why-item h3{margin:16px 0 6px}
+.why-item p{color:rgba(255,255,255,.75);font-size:.97rem;max-width:36ch}
+
+/* tratamentos + resultados */
+.treat{background:var(--paper)}
+.tabs{margin-top:26px;display:flex;gap:8px;overflow-x:auto;padding:8px 2px 10px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .95rem var(--sans);padding:11px 20px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;transition:all .2s}
+.tabs button:hover{border-color:var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.panel{margin-top:34px;display:grid;gap:26px}
+.panel[hidden]{display:none}
+.panel-text h3{font-size:clamp(1.7rem,5vw,2.3rem);margin-bottom:12px}
+.panel-text p{color:var(--ink-2);max-width:44ch}
+.panel-text p+p{margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;list-style:none}
+.tags li{font-size:.82rem;font-weight:600;padding:6px 13px;border:1px solid var(--line);border-radius:999px;color:var(--ink-2)}
+.panel-car{min-width:0}
+.arrows{display:none;gap:10px;flex:none}
+.arrows button{width:50px;height:50px;border-radius:50%;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer;font-size:1.3rem;line-height:1;display:grid;place-items:center;transition:background .2s,color .2s,opacity .2s}
+.arrows button:hover:not(:disabled){background:var(--ink);color:#fff;border-color:var(--ink)}
+.arrows button:disabled{opacity:.3;cursor:default}
+.track{display:flex;gap:16px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 20px 6px;scroll-padding-inline:20px}
+.track::-webkit-scrollbar{display:none}
+.panel .track{margin:0 -20px}
+.slide{flex:0 0 74%;max-width:300px;scroll-snap-align:start;cursor:zoom-in}
+.slide .ph{aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--sand)}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slide.wide img{object-fit:contain}
+.slide b{display:block;font-family:var(--serif);font-weight:500;font-size:1.1rem;margin-top:12px}
+.slide span{font-size:.86rem;color:var(--ink-2)}
+.car-foot{display:flex;justify-content:flex-end;margin-top:14px}
+.disclaimer{margin-top:30px;font-size:.84rem;color:var(--ink-2);max-width:72ch;padding-left:14px;border-left:3px solid var(--coral)}
+
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,28,38,.92);display:none;align-items:center;justify-content:center;padding:20px;flex-direction:column;gap:14px}
+.lb.open{display:flex}
+.lb img{max-height:78vh;max-width:min(94vw,820px);width:auto;border-radius:10px}
+.lb p{color:#fff;font-size:.92rem;text-align:center;max-width:60ch}
+.lb button{position:absolute;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:1.6rem;cursor:pointer;line-height:1}
+
+/* doutora */
+.doctor .wrap{display:grid;gap:28px}
+.doc-photo{border-radius:var(--r);overflow:hidden;background:var(--paper)}
+.doc-photo img{width:100%;height:auto}
+.doc-text{align-self:center}
+.doc-text h2{margin-bottom:6px}
+.doc-meta{color:var(--ink-2);font-size:1rem}
+.doc-areas{margin-top:14px;font-size:.95rem}
+.doc-quote{margin:26px 0;padding-left:18px;border-left:3px solid var(--coral);font-family:var(--serif);font-size:1.3rem;line-height:1.35}
+.doc-quote small{display:block;font-family:var(--sans);font-size:.82rem;color:var(--ink-2);margin-top:8px}
+.social{display:flex;gap:10px;flex-wrap:wrap}
+.social a{display:inline-flex;align-items:center;gap:10px;font-size:.93rem;font-weight:600;padding:11px 18px;border:1.5px solid var(--ink);border-radius:999px;text-decoration:none;transition:background .2s,color .2s}
+.social a svg{width:20px;height:20px;flex:none}
+.social a:hover{background:var(--ink);color:#fff}
+
+/* depoimentos */
+.testi{background:var(--ink);color:#fff}
+.testi h2 em{color:#8FD3E3}
+.testi .eyebrow{color:#F0A27A}
+.testi .lead{color:rgba(255,255,255,.72)}
+.car-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:28px}
+.car-head h2{margin-bottom:8px}
+.testi .track{padding:0 20px 6px}
+.tcard2{flex:0 0 86%;max-width:380px;scroll-snap-align:start;background:var(--paper);color:var(--ink);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;min-height:300px}
+.stars{color:#E09A14;letter-spacing:3px;font-size:.95rem}
+.tcard2 p{font-family:var(--serif);font-size:1.12rem;line-height:1.45;margin:14px 0 20px;flex:1}
+.tcard2 footer{border-top:1px solid var(--line);padding-top:14px;font-size:.88rem;color:var(--ink-2)}
+.tcard2 footer b{display:block;color:var(--ink);font-size:.98rem}
+.g-note{margin-top:22px;font-size:.84rem;color:rgba(255,255,255,.6)}
+
+/* como funciona */
+.how .wrap{display:grid;gap:44px}
+.phone{width:100%;max-width:310px;margin-inline:auto;border:9px solid #0C2430;border-radius:38px;background:#0C2430;overflow:hidden;box-shadow:0 30px 50px -30px rgba(12,36,48,.7)}
+.phone-bar{background:#0E6B55;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.phone-bar i{width:38px;height:38px;border-radius:50%;background:var(--sand);color:#0E6B55;display:grid;place-items:center;font:600 1.15rem var(--serif);font-style:normal}
+.phone-bar b{display:block;font-size:.98rem;line-height:1.2}
+.phone-bar span{font-size:.74rem;opacity:.85}
+.chat{background:#E9E1D3;padding:18px 14px 20px;display:flex;flex-direction:column;gap:10px;min-height:330px}
+.chat small{align-self:center;background:rgba(255,255,255,.7);border-radius:8px;font-size:.7rem;color:var(--ink-2);padding:3px 10px}
+.msg{max-width:84%;padding:9px 12px;border-radius:12px;font-size:.88rem;line-height:1.4;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.msg.me{align-self:flex-end;background:#D9FDD3;border-top-right-radius:3px}
+.msg.them{align-self:flex-start;background:#fff;border-top-left-radius:3px}
+.chat-note{text-align:center;font-size:.8rem;color:var(--ink-2);margin-top:14px}
+.timeline{list-style:none;position:relative;margin-top:30px}
+.timeline::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:1.5px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 30px 66px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:attr(data-n);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font-family:var(--serif);font-size:1.25rem;display:grid;place-items:center}
+.timeline .tg{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--coral)}
+.timeline h3{margin:4px 0 6px;font-size:1.35rem}
+.timeline p{color:var(--ink-2);font-size:.98rem;max-width:44ch}
+
+/* faq */
+.faq{background:var(--paper)}
+.faq .wrap{display:grid;gap:34px}
+.fchips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 22px}
+.fchips button{font:600 .88rem var(--sans);padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;transition:all .2s}
+.fchips button:hover{border-color:var(--ink)}
+.fchips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+details[hidden]{display:none}
+summary{list-style:none;cursor:pointer;font-family:var(--serif);font-size:1.18rem;padding:20px 52px 20px 0;position:relative;line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:50%;width:34px;height:34px;margin-top:-17px;border:1.5px solid var(--line);border-radius:50%;display:grid;place-items:center;font:400 1.4rem/1 var(--sans);color:var(--coral);transition:all .25s}
+details[open] summary::after{content:"–";background:var(--ink);border-color:var(--ink);color:#fff}
+details p{padding:0 0 22px;color:var(--ink-2);max-width:62ch;font-size:.98rem}
+.faq-card{background:var(--sand);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;align-self:start}
+.faq-card h3{font-size:1.6rem;margin:2px 0 10px}
+.faq-card p{color:var(--ink-2);font-size:.96rem}
+.faq-card ul{list-style:none;margin:18px 0 22px;display:grid;gap:8px;font-size:.93rem}
+.faq-card li::before{content:"✓";color:var(--teal-deep);font-weight:700;margin-right:10px}
+.faq-card .btn{width:100%}
+.faq-card small{display:block;text-align:center;margin-top:12px;color:var(--ink-2);font-size:.85rem}
+
+/* final */
+.final{background:var(--ink);color:#fff;text-align:center;padding:92px 0}
+.final h2{max-width:18ch;margin-inline:auto}
+.final h2 em{color:#8FD3E3}
+.final .lead{color:rgba(255,255,255,.75);margin-inline:auto}
+
+/* rodapé */
+footer.site{background:#0C2430;color:rgba(255,255,255,.82);padding:56px 0 120px;font-size:.95rem}
+footer.site .wrap{display:grid;gap:34px}
+footer.site h4{font-family:var(--serif);font-weight:500;font-size:1.2rem;color:#fff;margin-bottom:10px}
+footer.site a{color:#fff}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:7px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.hours td:last-child{text-align:right}
+.map{border-radius:var(--r);overflow:hidden;border:0;width:100%;height:380px}
+.legal{font-size:.8rem;color:rgba(255,255,255,.62);border-top:1px solid rgba(255,255,255,.14);padding-top:22px;line-height:1.6}
+.legal .fill{background:#FFF1B8;color:#12303F;padding:1px 6px;border-radius:4px;font-weight:600}
+
+.float{position:fixed;right:16px;bottom:16px;z-index:70;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;padding:14px 20px 14px 16px;border-radius:999px;box-shadow:0 10px 24px -8px rgba(0,0,0,.4);font-size:.98rem}
+.float svg{width:26px;height:26px}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (min-width:760px){
+  body{font-size:18px}
+  section{padding:110px 0}
+  .wrap{padding:0 32px}
+  .hero{padding:48px 0 96px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:64px}
+  .num-row{grid-template-columns:repeat(4,1fr);padding:40px 0}
+  .mirror .wrap{grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+  .fear .wrap{grid-template-columns:.8fr 1fr;gap:70px}
+  .why-grid{grid-template-columns:repeat(3,1fr);gap:30px}
+  .panel{gap:32px}
+  .panel-text{display:flex;gap:56px;align-items:baseline}
+  .panel-text h3{margin:0;flex:none}
+  .panel .track{margin:0;padding:0;scroll-padding-inline:0}
+  .arrows{display:flex}
+  .slide{flex-basis:290px}
+  .testi .track{padding:0 32px 6px}
+  .track{scroll-padding-inline:32px}
+  .tcard2{flex-basis:380px}
+  .doctor .wrap{grid-template-columns:1.5fr .9fr;gap:56px;align-items:center}
+  .how .wrap{grid-template-columns:.7fr 1.3fr;gap:80px;align-items:center}
+  .timeline li{padding-bottom:38px}
+  .faq .wrap{grid-template-columns:1.5fr 1fr;gap:64px}
+  .faq-card{position:sticky;top:calc(var(--hdr) + 24px)}
+  footer.site .wrap{grid-template-columns:1fr .8fr 1.5fr}
+  .legal{grid-column:1/-1}
+  .float{right:28px;bottom:28px}
+}
+@media (min-width:1000px){
+  .nav{display:flex;gap:24px}
+  .burger,.drawer{display:none!important}
+}
+@media (min-width:1240px){
+  .testi .track{padding-inline:calc((100% - var(--maxw))/2 + 32px);scroll-padding-inline:calc((100% - var(--maxw))/2 + 32px)}
+}
+
+/* movimento e animações */
+.why-item .pic{overflow:hidden;border-radius:var(--r)}
+.why-item .pic img{border-radius:0}
+.btn{position:relative;overflow:hidden}
+@media (prefers-reduced-motion:no-preference){
+  .btn::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-20deg);transition:left .8s}
+  .btn:hover::after{left:135%}
+  .btn svg{transition:transform .35s}
+  .btn:hover svg{transform:rotate(-14deg) scale(1.12)}
+  .slide{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .slide .ph{transition:box-shadow .5s}
+  .slide img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+
+  .slide:hover .ph{box-shadow:0 30px 40px -24px rgba(18,48,63,.55)}
+
+  .slide b{position:relative}
+  .slide b::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:var(--coral);transition:width .45s}
+  .slide:hover b::after{width:100%}
+
+
+
+
+  .hero-img img{animation:heroIn 2s cubic-bezier(.2,.7,.2,1) backwards}
+
+  @keyframes heroIn{from{transform:scale(1.14);opacity:.6}to{transform:scale(1);opacity:1}}
+  .hero .wrap>div:first-child>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero .wrap>div:first-child>*:nth-child(2){animation-delay:.12s}
+  .hero .wrap>div:first-child>*:nth-child(3){animation-delay:.24s}
+  .hero .wrap>div:first-child>*:nth-child(4){animation-delay:.36s}
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .checks li{transition:background .35s}
+  .checks li::before{transition:background .3s,transform .3s}
+  .checks li:hover{background:rgba(217,106,51,.07)}
+  .checks li:hover::before{background:var(--coral);transform:scale(1.18)}
+  .timeline li::before{transition:transform .35s,background .35s}
+  .timeline li:hover::before{transform:scale(1.14);background:var(--coral)}
+  .tcard2{transition:transform .45s,box-shadow .45s}
+  .tcard2:hover{transform:translateY(-8px);box-shadow:0 30px 40px -24px rgba(0,0,0,.6)}
+  .tabs button{transition:all .3s}
+  .tabs button:hover{transform:translateY(-2px)}
+  .panel:not([hidden]){animation:fadeUp .65s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  details[open] p{animation:fadeUp .45s both}
+  .social a,.faq-card,.fchips button{transition:all .3s}
+  .social a:hover{transform:translateY(-3px)}
+
+
+
+
+
+  @keyframes pop{from{opacity:0;transform:translateY(10px) scale(.92)}to{opacity:1;transform:none}}
+
+  @keyframes wiggle{0%,90%,100%{transform:none}93%{transform:translateY(-6px) rotate(-3deg)}96%{transform:translateY(0) rotate(3deg)}}
+  .float:hover{animation:none;transform:scale(1.06)}
+}
+/* base novos elementos */
+.typing{display:none;align-self:flex-start;background:#fff;border-radius:12px;border-top-left-radius:3px;padding:12px 14px;gap:4px;overflow:hidden}
+.phone.play .typing{display:flex}
+.typing span{width:7px;height:7px;border-radius:50%;background:#9aa7a4;display:block}
+.tick{font-style:normal;font-size:.7rem;color:#9aa7a4;margin-left:8px;float:right;margin-top:7px}
+.prog{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--coral);transform-origin:left;transform:scaleX(0);z-index:80;pointer-events:none}
+.fits .arrows{visibility:hidden}
+.car-foot{justify-content:center}
+.testi .car-foot{margin-top:26px}
+.testi .arrows{color:#fff}
+.testi .arrows button:hover:not(:disabled){background:#fff;color:var(--ink);border-color:#fff}
+.doc-photo,.why-item .pic{position:relative}
+.arrows{display:none}
+@media (min-width:760px){.arrows{display:flex}}
+
+/* animações extras, cada tipo de foto com a sua */
+@media (prefers-reduced-motion:no-preference){
+  /* carrossel: inclina para lados alternados */
+  .slide img{transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .6s}
+  .slide:nth-child(odd):hover{transform:translateY(-8px) rotate(-1.6deg)}
+  .slide:nth-child(even):hover{transform:translateY(-8px) rotate(1.6deg)}
+  .slide:hover img{transform:scale(1.05);filter:saturate(1.18) contrast(1.04)}
+  /* por que escolher: barra laranja e deslize lateral */
+  .why-item .pic::after{content:"";position:absolute;left:0;bottom:0;height:5px;width:0;background:var(--coral);transition:width .7s cubic-bezier(.2,.7,.2,1)}
+  .why-item:hover .pic::after{width:100%}
+  .why-item .pic img{transition:transform 1.5s cubic-bezier(.2,.7,.2,1);transform:scale(1.001)}
+  .why-item:hover .pic img{transform:scale(1.05) translateX(-2%)}
+  /* recepção em arco: gira de leve */
+  .fear-img{transform:translateY(var(--py,0px)) rotate(var(--rot,0deg));transition:transform .9s cubic-bezier(.2,.7,.2,1),clip-path 1.3s cubic-bezier(.2,.7,.2,1)}
+  .fear-img:hover{--rot:-2.4deg}
+  .fear-img img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+  .fear-img:hover img{transform:scale(1.06)}
+  /* doutora: brilho que atravessa a foto */
+  .doc-photo::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-18deg);transition:left 1.1s ease;z-index:2;pointer-events:none}
+  .doc-photo:hover::before{left:135%}
+  /* topo: acompanha o mouse */
+  .hero-img{transform:translateY(var(--py,0px))}
+  .hero-img img{transition:transform .5s ease-out}
+  .hero-img:hover img{transform:scale(1.07) translate(var(--mx,0px),var(--my,0px))}
+  /* fotos entram com uma cortina */
+  .js .wipe{transition:clip-path 1.3s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+  .js .wipe.up{clip-path:inset(100% 0 0 0)}
+  .js .wipe.left{clip-path:inset(0 100% 0 0)}
+  .js .wipe.in{clip-path:inset(0 0 0 0)}
+  .js .why-item .pic{clip-path:inset(0 0 100% 0);transition:clip-path 1.1s .15s cubic-bezier(.2,.7,.2,1)}
+  .js .why-item.in .pic{clip-path:inset(0 0 0 0)}
+  /* títulos: sublinhado desenhado */
+  .rv h2 em{background:linear-gradient(var(--coral),var(--coral)) 0 100%/0% 2px no-repeat;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size 1.1s .6s cubic-bezier(.2,.7,.2,1)}
+  .rv.in h2 em{background-size:100% 2px}
+  /* linha do tempo cresce e lista de identificação acende */
+  .timeline::before{transform-origin:top;transform:scaleY(0);transition:transform 1.8s .3s cubic-bezier(.2,.7,.2,1)}
+  .rv.in .timeline::before{transform:scaleY(1)}
+  .rv.in .checks li::before{animation:ring .7s both}
+  .checks.rv.in li:nth-child(1)::before{animation-delay:.3s}
+  .checks.rv.in li:nth-child(2)::before{animation-delay:.5s}
+  .checks.rv.in li:nth-child(3)::before{animation-delay:.7s}
+  .checks.rv.in li:nth-child(4)::before{animation-delay:.9s}
+  .checks.rv.in li:nth-child(5)::before{animation-delay:1.1s}
+  @keyframes ring{0%{transform:scale(.4);background:var(--coral)}60%{transform:scale(1.3);background:var(--coral)}100%{transform:scale(1);background:transparent}}
+  /* botão flutuante entra com um pulo */
+  .float{animation:floatIn .8s 1.3s cubic-bezier(.2,.8,.3,1.4) backwards,wiggle 7s 4s ease-in-out infinite}
+  @keyframes floatIn{from{opacity:0;transform:translateY(40px) scale(.7)}to{opacity:1;transform:none}}
+  /* celular de conversa */
+  .phone{animation:phoneFloat 6s ease-in-out infinite;cursor:pointer}
+  @keyframes phoneFloat{50%{transform:translateY(-10px) rotate(.8deg)}}
+  .phone.play .m1{animation:pop .5s .5s both}
+  .phone.play .t1{animation:typing 1.3s 1.6s both}
+  .phone.play .m2{animation:pop .5s 2.9s both}
+  .phone.play .m3{animation:pop .5s 4.2s both}
+  .phone.play .t2{animation:typing 1.3s 5.2s both}
+  .phone.play .m4{animation:pop .5s 6.5s both}
+  .phone.play .m1 .tick{animation:tickBlue .4s 1.5s both}
+  .phone.play .m3 .tick{animation:tickBlue .4s 5.1s both}
+  .phone.play .typing span{animation:dot 1s infinite}
+  .phone.play .typing span:nth-child(2){animation-delay:.15s}
+  .phone.play .typing span:nth-child(3){animation-delay:.3s}
+  @keyframes dot{0%,60%,100%{transform:none;opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+  @keyframes typing{0%{opacity:0;max-height:0;padding-top:0;padding-bottom:0;margin-top:-10px}8%{opacity:1;max-height:40px;padding:12px 14px;margin-top:0}92%{opacity:1;max-height:40px;padding:12px 14px;margin-top:0}100%{opacity:0;max-height:0;padding-top:0;padding-bottom:0;margin-top:-10px}}
+  @keyframes tickBlue{from{color:#9aa7a4}to{color:#2aa5f5}}
+}
+/* espaço para o efeito de subir não cortar o topo */
+.track,.panel .track,.testi .track{padding-top:18px;margin-top:-18px;padding-bottom:22px;margin-bottom:-12px}</style>
+</head>
+<body>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.18 1.6 6L4 29l8.17-1.57A12 12 0 0 0 16.04 27C22.67 27 28 21.6 28 15.03S22.67 3 16.04 3Zm0 21.9c-1.8 0-3.55-.48-5.08-1.4l-.36-.22-4.85.93.98-4.72-.24-.38a9.9 9.9 0 0 1-1.5-5.28c0-5.5 4.5-9.97 10.05-9.97S26 9.55 26 15.03s-4.45 9.87-9.96 9.87Zm5.5-7.4c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.95 1.18-.17.2-.35.23-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.25-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.5s1.08 2.9 1.23 3.1c.15.2 2.1 3.2 5.1 4.5.72.3 1.28.5 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.78-.72 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.13-.28-.2-.58-.35Z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 2h-3.2v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.3a6.2 6.2 0 1 0 5.2 6.1V8.8a8 8 0 0 0 4.4 1.4V7a4.8 4.8 0 0 1-4.4-5Z"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Amo Osasco, início"><span>Amo <b>Osasco</b></span><small>Ortodontia &amp; Estética</small></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#doutora">A doutora</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn small" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Menu">
+  <a href="#tratamentos">Tratamentos</a>
+  <a href="#doutora">A doutora</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#como-funciona">Como funciona</a>
+  <a href="#duvidas">Dúvidas</a>
+  <a href="#onde">Onde estamos</a>
+</nav>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Chegou a hora de <em>sorrir sem pensar duas vezes.</em></h1>
+      <p class="lead">Ortodontia, estética do sorriso e estética facial no centro de Osasco.</p>
+      <a class="btn" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quero agendar minha avaliação</a>
+      <p class="hero-stars"><b>★★★★★</b><a href="#depoimentos">Avaliações reais de pacientes no Google</a></p>
+    </div>
+    <div class="hero-img">
+      <img src="assets/img/clinica-sala.jpg" alt="Consultório da Amo Osasco, limpo e iluminado" width="580" height="798" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- NÚMEROS -->
+<section class="numbers" aria-label="A clínica em números">
+  <div class="wrap">
+    <div class="num-row">
+      <div class="num"><b data-count="62">62</b><span>avaliações escritas por pacientes no Google</span></div>
+      <div class="num"><b>9 anos</b><span>de pacientes contando suas histórias no Google</span></div>
+      <div class="num"><b data-count="6">6</b><span>tratamentos de sorriso e rosto no mesmo endereço</span></div>
+      <div class="num"><b>Seg a sáb</b><span>atendimento no Centro de Osasco</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTIFICAÇÃO -->
+<section class="mirror">
+  <div class="wrap">
+    <div class="rv">
+      <span class="script">talvez seja você</span>
+      <h2>Seu sorriso pode estar dizendo <em>menos do que você sente.</em></h2>
+      <p class="mirror-note">Cada mês empurrado é mais um mês guardando o sorriso. E quase sempre o primeiro passo é só uma conversa.</p>
+      <div class="btn-wrap left">
+        <a class="btn" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quero dar o primeiro passo</a>
+      </div>
+    </div>
+    <ul class="checks rv">
+      <li>Você ensaia o sorriso antes de tirar a foto, ou prefere nem aparecer nela.</li>
+      <li>Um dente torto, com espaço ou faltando virou assunto que você evita.</li>
+      <li>Seu sorriso amarelou e você sente que ele envelhece o seu rosto.</li>
+      <li>Você se olha no espelho e vê um rosto cansado, que não combina com o que sente.</li>
+      <li>Já pensou em procurar um dentista, mas o medo ou a dúvida sobre o valor fez você adiar.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MEDO -->
+<section class="fear">
+  <div class="wrap">
+    <div class="fear-img wipe up"><img src="assets/img/recepcao-antiga.jpg" alt="Recepção da Amo Osasco, clara e acolhedora" loading="lazy" width="640" height="480" style="object-position:38% 50%"></div>
+    <div class="rv">
+      <span class="script">pode chegar como está</span>
+      <h2>Medo de dentista? <em>A gente começa só conversando.</em></h2>
+      <p class="t">Muita gente adia por receio de sentir dor, de ser julgada(o) ou de descobrir que o caso é complicado. Aqui você conta o que te incomoda, a doutora examina e explica as opções, e você escolhe o seu ritmo.</p>
+      <div class="btn-wrap left">
+        <a class="btn" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quero conversar sobre o meu caso</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE ESCOLHER -->
+<section class="why" id="experiencia">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Por que escolher a Amo</span>
+      <h2>O que os pacientes <em>mais destacam.</em></h2>
+      <p class="lead">Direto das avaliações que eles deixaram no Google.</p>
+    </div>
+    <div class="why-grid">
+      <article class="why-item rv"><div class="pic"><img src="assets/img/clinica-cadeira.jpg" alt="Sala de atendimento limpa e organizada" loading="lazy" width="1091" height="727"></div><h3>Ambiente limpo e acolhedor</h3><p>Espaço organizado para você chegar tranquila(o) e sair bem cuidada(o).</p></article>
+      <article class="why-item rv"><div class="pic"><img src="assets/img/clinica-fachada.jpg" alt="Fachada do prédio azul da clínica no Centro de Osasco" loading="lazy" width="1000" height="667"></div><h3>No Centro de Osasco</h3><p>Av. João Batista, 125. Localização central e fácil de chegar.</p></article>
+      <article class="why-item rv"><div class="pic"><img src="assets/img/clinica-porta.jpg" alt="Entrada da Amo Osasco com a placa de serviços" loading="lazy" width="800" height="533"></div><h3>Equipe atenciosa e preço justo</h3><p>Cada etapa explicada e um orçamento claro na avaliação.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMENTOS E RESULTADOS -->
+<section class="treat" id="tratamentos">
+  <span id="resultados"></span>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Tratamentos e resultados reais</span>
+      <h2>Escolha o seu <em>primeiro passo.</em></h2>
+      <p class="lead">Casos reais atendidos aqui, em Osasco.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Tratamentos" id="tabs">
+      <button role="tab" type="button" data-t="orto" aria-selected="true">Ortodontia</button>
+      <button role="tab" type="button" data-t="implante" aria-selected="false">Implantes e próteses</button>
+      <button role="tab" type="button" data-t="faceta" aria-selected="false">Facetas e lentes</button>
+      <button role="tab" type="button" data-t="clareamento" aria-selected="false">Clareamento</button>
+      <button role="tab" type="button" data-t="face" aria-selected="false">Botox e preenchimento</button>
+    </div>
+
+    <div class="panel" data-p="orto">
+      <div class="panel-text">
+        <h3>Ortodontia</h3>
+        <p>Alinhe os dentes e equilibre a mordida, com aparelho fixo ou alinhadores invisíveis.</p>
+      </div>
+      <div class="panel-car" data-car>
+        <div class="track">
+          <figure class="slide"><div class="ph"><img src="assets/img/ortodontia-1.jpg" alt="Antes e depois de tratamento ortodôntico" loading="lazy" width="900" height="1126"></div><b>Ortodontia</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/ortodontia-5.jpg" alt="Antes e depois com aparelho ortodôntico" loading="lazy" width="900" height="1124"></div><b>Ortodontia</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/ortodontia-2.jpg" alt="Evolução de tratamento ortodôntico em três etapas" loading="lazy" width="900" height="900"></div><b>Evolução do tratamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/ortodontia-6.jpg" alt="Antes e depois de ortodontia, arcada superior" loading="lazy" width="900" height="1125"></div><b>Ortodontia</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/ortodontia-3.jpg" alt="Evolução de tratamento ortodôntico" loading="lazy" width="900" height="1124"></div><b>Ortodontia</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/ortodontia-4.jpg" alt="Ortodontia com recuperação de espaço" loading="lazy" width="900" height="1126"></div><b>Recuperando espaço</b></figure>
+        </div>
+        <div class="car-foot"><div class="arrows"><button type="button" data-prev aria-label="Anterior">&larr;</button><button type="button" data-next aria-label="Próximo">&rarr;</button></div></div>
+      </div>
+    </div>
+
+    <div class="panel" data-p="implante" hidden>
+      <div class="panel-text">
+        <h3>Implantes e próteses</h3>
+        <p>Recupere a mastigação e a segurança de sorrir sem esconder.</p>
+      </div>
+      <div class="panel-car" data-car>
+        <div class="track">
+          <figure class="slide"><div class="ph"><img src="assets/img/implante.jpg" alt="Antes e depois de implante dentário" loading="lazy" width="900" height="900"></div><b>Implante dentário</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/protese-2.jpg" alt="Antes e depois de prótese dentária" loading="lazy" width="900" height="900"></div><b>Prótese</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/implante-2.jpg" alt="Coroa sobre implante em instalação" loading="lazy" width="860" height="860"></div><b>Coroa sobre implante</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/protese.jpg" alt="Antes e depois de prótese dentária" loading="lazy" width="900" height="900"></div><b>Prótese</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/coroa.jpg" alt="Coroa unitária na região anterior em três etapas" loading="lazy" width="900" height="1126"></div><b>Coroa unitária</b></figure>
+        </div>
+        <div class="car-foot"><div class="arrows"><button type="button" data-prev aria-label="Anterior">&larr;</button><button type="button" data-next aria-label="Próximo">&rarr;</button></div></div>
+      </div>
+    </div>
+
+    <div class="panel" data-p="faceta" hidden>
+      <div class="panel-text">
+        <h3>Facetas e lentes</h3>
+        <p>Forma, cor e proporção planejadas para um sorriso harmônico e natural.</p>
+      </div>
+      <div class="panel-car" data-car>
+        <div class="track">
+          <figure class="slide"><div class="ph"><img src="assets/img/facetas-1.jpg" alt="Antes e depois de lentes em resina composta" loading="lazy" width="900" height="900"></div><b>Resina composta</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/espaco-dentes.jpg" alt="Antes e depois do fechamento de espaço entre os dentes" loading="lazy" width="900" height="1126"></div><b>Fechamento de espaço</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/sorriso-renovado.jpg" alt="Antes e depois de sorriso renovado" loading="lazy" width="750" height="750"></div><b>Sorriso renovado</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/resinas.jpg" alt="Antes e depois de resinas no sorriso" loading="lazy" width="900" height="900"></div><b>Resinas</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/gengiva.jpg" alt="Antes e depois de gengivoplastia" loading="lazy" width="900" height="900"></div><b>Gengivoplastia</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/lentes.jpg" alt="Lentes em resina finalizadas" loading="lazy" width="900" height="900"></div><b>Lentes em resina</b></figure>
+        </div>
+        <div class="car-foot"><div class="arrows"><button type="button" data-prev aria-label="Anterior">&larr;</button><button type="button" data-next aria-label="Próximo">&rarr;</button></div></div>
+      </div>
+    </div>
+
+    <div class="panel" data-p="clareamento" hidden>
+      <div class="panel-text">
+        <h3>Clareamento</h3>
+        <p>Um sorriso mais claro e uniforme, com acompanhamento profissional.</p>
+      </div>
+      <div class="panel-car" data-car>
+        <div class="track">
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="900"></div><b>Clareamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento-5.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="1109"></div><b>Clareamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento-4.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="1126"></div><b>Clareamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento-2.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="900"></div><b>Clareamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento-6.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="900"></div><b>Clareamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento-3.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="1200"></div><b>Clareamento</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/clareamento-7.jpg" alt="Antes e depois de clareamento dental" loading="lazy" width="900" height="903"></div><b>Clareamento</b></figure>
+        </div>
+        <div class="car-foot"><div class="arrows"><button type="button" data-prev aria-label="Anterior">&larr;</button><button type="button" data-next aria-label="Próximo">&rarr;</button></div></div>
+      </div>
+    </div>
+
+    <div class="panel" data-p="face" hidden>
+      <div class="panel-text">
+        <h3>Botox e preenchimento</h3>
+        <p>Suavize marcas de expressão e realce o rosto com naturalidade.</p>
+      </div>
+      <div class="panel-car" data-car>
+        <div class="track">
+          <figure class="slide"><div class="ph"><img src="assets/img/botox-1.jpg" alt="Antes e depois de botox na testa" loading="lazy" width="900" height="1126"></div><b>Botox</b></figure>
+          <figure class="slide wide"><div class="ph"><img src="assets/img/labios.jpg" alt="Antes e depois de preenchimento labial" loading="lazy" width="900" height="595"></div><b>Preenchimento labial</b></figure>
+          <figure class="slide"><div class="ph"><img src="assets/img/preenchimento-1.jpg" alt="Preenchimento labial finalizado" loading="lazy" width="900" height="1125"></div><b>Preenchimento labial</b></figure>
+        </div>
+        <div class="car-foot"><div class="arrows"><button type="button" data-prev aria-label="Anterior">&larr;</button><button type="button" data-next aria-label="Próximo">&rarr;</button></div></div>
+      </div>
+    </div>
+
+    <div class="btn-wrap">
+      <a class="btn" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quero saber qual é o ideal para mim</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOUTORA -->
+<section class="doctor" id="doutora">
+  <div class="wrap">
+    <div class="doc-photo wipe left"><img src="assets/img/dra-alessandra.jpg" alt="Dra. Alessandra Lemes, responsável técnica da Amo Osasco" loading="lazy" width="900" height="544"></div>
+    <div class="doc-text rv">
+      <span class="eyebrow">Quem cuida de você</span>
+      <h2>Dra. Alessandra Lemes da Silva</h2>
+      <p class="doc-meta">Cirurgiã-dentista · CRO-SP 113963</p>
+      <p class="doc-areas">Implantodontia, reabilitação oral e harmonização orofacial.</p>
+      <blockquote class="doc-quote">“Mudou meu sorriso completamente, profissional muito atenciosa e mega competente.”<small>Lilian Assis, paciente, Google</small></blockquote>
+      <!-- Frase da própria doutora: [PREENCHER] -->
+      <div class="social">
+        <a href="https://www.tiktok.com/@alessandralemes44" target="_blank" rel="noopener"><svg><use href="#tt"/></svg>Bastidores no TikTok</a>
+        <a href="https://www.instagram.com/amoosascoortodontia/" target="_blank" rel="noopener"><svg><use href="#ig"/></svg>Casos no Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testi" id="depoimentos" data-car>
+  <div class="wrap">
+    <div class="car-head">
+      <div class="rv">
+        <span class="eyebrow">Depoimentos</span>
+        <h2>Quem já passou por aqui <em>conta como foi.</em></h2>
+        <p class="lead">Avaliações reais de pacientes no Google, sem edição.</p>
+      </div>
+    </div>
+  </div>
+  <div class="track">
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Ótimo trabalho, fiz meus implantes todos lá. Atendimento maravilhoso, sem comparação a outros lugares que fui. Amei, super indico.”</p><footer><b>Valeria Isabel</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Realizei meu tratamento de Ortodontia e ficou excelente. Equipe super atenciosa, sempre preocupada com o bem-estar dos pacientes. Possuem preço justo.”</p><footer><b>Magnus Dell e Garcia</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Já é minha dentista há 9 anos e mudou meu sorriso completamente. Fiz redução da gengiva, bichectomia e facetas. Meu sorriso é outro desde que a conheci.”</p><footer><b>Lilian Assis</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Experiência ótima do início ao fim, ambiente limpo e organizado, profissionais capacitadas e atenciosas, que te explicam certinho sobre o seu tratamento.”</p><footer><b>Giovanna Rosa Azevedo</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Estou super satisfeita com os resultados do meu tratamento. O atendimento é impecável. As meninas são sempre muito simpáticas, isso faz a diferença.”</p><footer><b>Maria Fernandes</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Desde pequeno sempre tive problemas com os meus dentes. A única clínica que resolveu meu problema, com serviços de qualidade e atendimento perfeito.”</p><footer><b>Jefferson José da Silva</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Fiz tratamento de canal e prótese lá e deu tudo certo. Pessoal muito profissional e respeitoso.”</p><footer><b>Allan Santos</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Preços que cabem no nosso bolso, atendimento ótimo e limpeza do local impecável. Super indico.”</p><footer><b>Daniele Araujo</b>Avaliação no Google</footer></article>
+    <article class="tcard2"><div class="stars">★★★★★</div><p>“Meus dentes melhoraram muito desde que coloquei o aparelho lá. Ótimo atendimento e estou feliz com o resultado.”</p><footer><b>Renato Daniel Santana Santos</b>Avaliação no Google</footer></article>
+  </div>
+  <div class="wrap"><div class="car-foot"><div class="arrows"><button type="button" data-prev aria-label="Anterior">&larr;</button><button type="button" data-next aria-label="Próximo">&rarr;</button></div></div><p class="g-note">Avaliações públicas do Google Maps da clínica. Cada experiência é individual.</p></div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="how" id="como-funciona">
+  <div class="wrap">
+    <div class="rv">
+      <div class="phone" aria-hidden="true">
+        <div class="phone-bar"><i>A</i><div><b>Amo Osasco</b><span>WhatsApp</span></div></div>
+        <div class="chat">
+          <small>Hoje</small>
+          <div class="msg me m1">Olá! Vim pelo site e quero agendar minha avaliação.<i class="tick">✓✓</i></div>
+          <div class="typing t1"><span></span><span></span><span></span></div>
+          <div class="msg them m2">Olá! Que bom ter você aqui. Me conta: o que você gostaria de melhorar no seu sorriso?</div>
+          <div class="msg me m3">Quero alinhar meus dentes.<i class="tick">✓✓</i></div>
+          <div class="typing t2"><span></span><span></span><span></span></div>
+          <div class="msg them m4">Perfeito! Vamos ver o melhor horário para a sua avaliação.</div>
+        </div>
+      </div>
+      <p class="chat-note">Exemplo de conversa</p>
+    </div>
+    <div class="rv">
+      <span class="script">simples assim</span>
+      <h2>Do primeiro “oi” <em>ao seu plano.</em></h2>
+      <ol class="timeline">
+        <li data-n="1"><span class="tg">Passo 1 · WhatsApp</span><h3>Chame a equipe</h3><p>Conte o que te incomoda ou o que você quer mudar. A equipe responde e combina um horário que caiba na sua rotina.</p></li>
+        <li data-n="2"><span class="tg">Passo 2 · Na clínica</span><h3>Faça sua avaliação</h3><p>A doutora examina, explica o que encontrou e tira as suas dúvidas com calma.</p></li>
+        <li data-n="3"><span class="tg">Passo 3 · Para decidir</span><h3>Receba o seu plano</h3><p>Você sai com as opções para o seu caso, o passo a passo e as condições, e decide no seu tempo.</p></li>
+      </ol>
+      <div class="btn-wrap left">
+        <a class="btn" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Começar pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="duvidas">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Dúvidas? <em>A gente responde.</em></h2>
+      <div class="fchips" id="fchips">
+        <button type="button" data-f="all" aria-pressed="true">Todas</button>
+        <button type="button" data-f="trat" aria-pressed="false">Tratamentos</button>
+        <button type="button" data-f="aten" aria-pressed="false">Atendimento</button>
+        <button type="button" data-f="pag" aria-pressed="false">Pagamento e local</button>
+      </div>
+      <div id="faqlist">
+        <details data-c="aten"><summary>Tenho medo de dentista. Vocês atendem pessoas como eu?</summary><p>Sim. Os procedimentos são feitos com anestesia e técnica adequadas, e você é avisada(o) de cada etapa antes de começar. Conte o seu receio na avaliação e a gente conduz no seu ritmo.</p></details>
+        <details data-c="trat"><summary>Acho que meu caso é complicado demais.</summary><p>Só a avaliação responde com segurança. Muitos casos que parecem difíceis começam por recuperar espaço, função e equilíbrio antes da estética. Você sai sabendo as opções para o seu caso.</p></details>
+        <details data-c="trat"><summary>Quanto tempo dura o tratamento?</summary><p>Depende do que você precisa. Um clareamento é bem diferente de uma ortodontia ou de um implante. Na avaliação a doutora explica o tempo estimado do seu caso e o que cada etapa envolve.</p></details>
+        <details data-c="trat"><summary>O resultado fica natural?</summary><p>O planejamento considera forma, cor e proporção de cada dente e a harmonia com o seu rosto, justamente para o resultado ficar natural. Os resultados variam de pessoa para pessoa.</p></details>
+        <details data-c="trat"><summary>Dá para alinhar os dentes sem que ninguém perceba?</summary><p>Em muitos casos, sim: existem alinhadores invisíveis, discretos e confortáveis. A indicação depende da avaliação do seu caso.</p></details>
+        <details data-c="trat"><summary>Ortodontia tem idade certa?</summary><p>Não. O que define o tratamento não é a sua idade, e sim a saúde bucal e o planejamento correto.</p></details>
+        <details data-c="aten"><summary>A avaliação tem algum compromisso?</summary><p>A avaliação é o primeiro passo para você entender o seu caso. Você sai com as opções e as condições e decide no seu tempo.</p></details>
+        <details data-c="pag"><summary>Quais são as formas de pagamento?</summary><p>As condições são apresentadas junto com o seu plano de tratamento, na avaliação. Se quiser saber antes, é só perguntar no WhatsApp.</p></details>
+        <details data-c="pag"><summary>Onde fica a clínica e quando posso ir?</summary><p>Av. João Batista, 125, 1º andar, sala 12, no Centro de Osasco. Atendemos de segunda a sexta, das 8h às 18h, e aos sábados, das 8h às 13h.</p></details>
+      </div>
+    </div>
+    <aside class="faq-card rv">
+      <span class="script">fale com a gente</span>
+      <h3>Sua dúvida não está aqui?</h3>
+      <p>Chame no WhatsApp. É a forma mais rápida de tirar qualquer dúvida e já deixar a avaliação encaminhada.</p>
+      <ul><li>Resposta direto no WhatsApp</li><li>Atendimento de segunda a sábado</li><li>No Centro de Osasco</li></ul>
+      <a class="btn" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Tirar minha dúvida</a>
+      <small>(11) 94537-0661</small>
+    </aside>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>O sorriso que você quer <em>começa com uma conversa.</em></h2>
+    <p class="lead">Chame no WhatsApp e agende a sua avaliação.</p>
+    <div class="btn-wrap">
+      <a class="btn big" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar minha avaliação</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site" id="onde">
+  <div class="wrap">
+    <div>
+      <h4>Amo Osasco</h4>
+      <p>Av. João Batista, 125, 1º andar, sala 12<br>Centro, Osasco, SP · CEP 06097-100</p>
+      <p style="margin-top:12px">WhatsApp: <a href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">(11) 94537-0661</a><br>Telefone: <a href="tel:+551146245845">(11) 4624-5845</a></p>
+      <p style="margin-top:12px">Instagram: <a href="https://www.instagram.com/amoosascoortodontia/" target="_blank" rel="noopener">@amoosascoortodontia</a></p>
+    </div>
+    <div>
+      <h4>Horários</h4>
+      <table class="hours">
+        <tr><td>Segunda a sexta</td><td>8h às 18h</td></tr>
+        <tr><td>Sábado</td><td>8h às 13h</td></tr>
+        <tr><td>Domingo</td><td>Fechado</td></tr>
+      </table>
+    </div>
+    <div>
+      <h4>Como chegar</h4>
+      <iframe class="map" title="Mapa da clínica Amo Osasco" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Jo%C3%A3o+Batista,+125,+Osasco+-+SP&amp;output=embed"></iframe>
+    </div>
+    <p class="legal">
+      Responsável técnica: Dra. Alessandra Lemes da Silva, cirurgiã-dentista, CRO-SP 113963 · Inscrição da clínica no CRO-SP <span class="fill">[PREENCHER]</span>.<br>
+      Imagens autorizadas pelos pacientes. Os resultados variam de pessoa para pessoa e dependem de avaliação clínica. Os procedimentos só são indicados após avaliação profissional.<br>
+      © Amo Osasco Odontologia. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5511945370661?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg><use href="#wa"/></svg><span>Agendar no WhatsApp</span></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button type="button" id="lbx" aria-label="Fechar">×</button><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><p></p></div>
+
+<script>
+(function(){
+  var h=document.getElementById('top');
+  function s(){h.classList.toggle('scrolled',window.scrollY>8)}
+  s();window.addEventListener('scroll',s,{passive:true});
+
+  var b=document.getElementById('burger'),d=document.getElementById('drawer');
+  function closeM(){d.classList.remove('open');b.setAttribute('aria-expanded','false')}
+  b.addEventListener('click',function(){var o=d.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  d.addEventListener('click',function(e){if(e.target.tagName==='A')closeM()});
+
+  /* carrosséis lentos: andam até o fim e param */
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cars=[];
+  function initCar(c){
+    var t=c.querySelector('.track'),p=c.querySelector('[data-prev]'),n=c.querySelector('[data-next]');
+    var o={t:t,pos:0,last:0,resume:0,hover:false};
+    function step(){return t.firstElementChild.getBoundingClientRect().width+16}
+    function upd(){var max=t.scrollWidth-t.clientWidth;p.disabled=t.scrollLeft<4;n.disabled=t.scrollLeft>=max-4;c.classList.toggle('fits',max<=4)}
+    function go(dir){o.resume=performance.now()+3500;t.scrollBy({left:dir*step()*2,behavior:'smooth'})}
+    p.addEventListener('click',function(){go(-1)});
+    n.addEventListener('click',function(){go(1)});
+    t.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);
+    /* só pausa enquanto o dedo/mouse está arrastando; passar o cursor por cima não para */
+    ['touchstart','pointerdown'].forEach(function(ev){t.addEventListener(ev,function(){o.hover=true})});
+    ['touchend','touchcancel','pointerup','pointercancel'].forEach(function(ev){t.addEventListener(ev,function(){o.hover=false;o.resume=performance.now()+2500})});
+    o.reset=function(){t.scrollLeft=0;o.pos=0;o.last=0;o.resume=performance.now()+1800;upd()};
+    o.resume=performance.now()+1800;
+    c._o=o;upd();
+    if(!reduce)cars.push(o);
+  }
+  document.querySelectorAll('[data-car]').forEach(initCar);
+  var prevT=0;
+  function tick(now){
+    var dt=prevT?Math.min(now-prevT,60):0;prevT=now;
+    cars.forEach(function(o){
+      var t=o.t;if(!t.clientWidth)return;
+      var r=t.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
+      var max=t.scrollWidth-t.clientWidth;if(max<=4)return;
+      if(Math.abs(t.scrollLeft-o.last)>1.5){o.pos=t.scrollLeft;o.resume=now+3000}
+      if(!o.hover&&now>=o.resume&&o.pos<max){o.pos=Math.min(o.pos+dt*0.022,max);t.scrollLeft=o.pos}else{o.pos=t.scrollLeft}
+      o.last=t.scrollLeft;
+    });
+    requestAnimationFrame(tick);
+  }
+  if(!reduce)requestAnimationFrame(tick);
+
+  /* abas de tratamentos */
+  var tabs=document.querySelectorAll('#tabs button'),panels=document.querySelectorAll('.panel');
+  tabs.forEach(function(bt){bt.addEventListener('click',function(){
+    tabs.forEach(function(x){x.setAttribute('aria-selected',x===bt)});
+    panels.forEach(function(pn){var on=pn.dataset.p===bt.dataset.t;pn.hidden=!on;
+      if(on){var c=pn.querySelector('[data-car]');if(c._o){c._o.reset()}}});
+  })});
+
+  /* faq */
+  var fb=document.querySelectorAll('#fchips button'),fd=document.querySelectorAll('#faqlist details');
+  fb.forEach(function(bt){bt.addEventListener('click',function(){
+    fb.forEach(function(x){x.setAttribute('aria-pressed',x===bt)});
+    fd.forEach(function(dt){dt.hidden=!(bt.dataset.f==='all'||dt.dataset.c===bt.dataset.f);if(dt.hidden)dt.open=false});
+  })});
+
+  /* ampliar fotos */
+  var lb=document.getElementById('lb'),li=lb.querySelector('img'),lp=lb.querySelector('p');
+  function close(){lb.classList.remove('open')}
+  document.addEventListener('click',function(e){
+    var sh=e.target.closest&&e.target.closest('.treat .slide');if(!sh)return;
+    var im=sh.querySelector('img'),bb=sh.querySelector('b');
+    li.src=im.currentSrc||im.src;li.alt=im.alt;lp.textContent=bb?bb.textContent:'';lb.classList.add('open');
+  });  lb.addEventListener('click',function(e){if(e.target!==li)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();closeM()}});
+
+
+  /* animações: atraso em sequência e contagem dos números */
+  document.querySelectorAll('.rv').forEach(function(e){
+    var sibs=[].filter.call(e.parentElement.children,function(x){return x.classList.contains('rv')});
+    var i=sibs.indexOf(e);if(i>0)e.style.transitionDelay=Math.min(i*90,450)+'ms';
+  });
+  var counters=document.querySelectorAll('[data-count]');
+  function countUp(el){
+    var to=+el.dataset.count,t0=null;
+    function f(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/1400,1),v=Math.round(to*(1-Math.pow(1-p,3)));el.textContent=v;if(p<1)requestAnimationFrame(f)}
+    el.textContent='0';requestAnimationFrame(f);
+  }
+  if(!reduce&&'IntersectionObserver' in window){
+    var co=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){countUp(x.target);co.unobserve(x.target)}})},{threshold:.6});
+    counters.forEach(function(c){co.observe(c)});
+  }
+
+  /* extras: classe js, barra de progresso, cortinas, celular, mouse no topo */
+  document.documentElement.classList.add('js');
+  var prog=document.getElementById('prog'),heroImg=document.querySelector('.hero-img'),fearImg=document.querySelector('.fear-img');
+  var wide=window.matchMedia&&matchMedia('(min-width:760px)').matches;
+  function onScroll(){
+    var max=document.documentElement.scrollHeight-innerHeight;prog.style.transform='scaleX('+(max>0?scrollY/max:0)+')';
+    if(!reduce&&wide){[heroImg,fearImg].forEach(function(el){if(!el)return;var r=el.getBoundingClientRect();el.style.setProperty('--py',((r.top+r.height/2-innerHeight/2)*-0.05).toFixed(1)+'px')})}
+  }
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  if(heroImg&&!reduce){heroImg.addEventListener('mousemove',function(e){var r=heroImg.getBoundingClientRect();heroImg.style.setProperty('--mx',(((e.clientX-r.left)/r.width-.5)*-22).toFixed(1)+'px');heroImg.style.setProperty('--my',(((e.clientY-r.top)/r.height-.5)*-22).toFixed(1)+'px')})}
+  var phone=document.querySelector('.phone');
+  function play(){phone.classList.remove('play');void phone.offsetWidth;phone.classList.add('play')}
+  if(phone)phone.addEventListener('click',play);
+  var wipes=[].slice.call(document.querySelectorAll('.wipe'));
+  if('IntersectionObserver' in window){
+    var wo=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;var el=x.target;wo.unobserve(el);
+      if(el===phone){play();return}
+      [].forEach.call(el.querySelectorAll('.wipe'),function(w){w.classList.add('in')});
+    })},{threshold:.18});
+    /* observa o bloco pai (a foto recortada pela cortina não conta como visível) */
+    var seen=[];wipes.forEach(function(w){var tgt=(w===phone)?phone:w.parentElement;if(seen.indexOf(tgt)<0){seen.push(tgt);wo.observe(tgt)}});
+  }else{wipes.forEach(function(w){w.classList.add('in')});if(phone)phone.classList.add('play')}
+  if(phone&&'IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){play()}else{phone.classList.remove('play')}})},{threshold:.4}).observe(phone)}
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:.06});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
